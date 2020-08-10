@@ -1,6 +1,6 @@
-# Selenium Version of Auto View Bot
+# Selenium Version of Auto View Bot [No Longer Being  Updated]
 
-**This is the source code for the fireliker tool automation.**
+**This is the source code for the fireliker tool& mytoolstown automation.**
 
 **Nyumat: I tried to keep this documentation as non-programmer legible as possible for some of you that aren't fluent coders yet.**
 
