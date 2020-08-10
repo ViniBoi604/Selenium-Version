@@ -14,7 +14,10 @@ viewsSelected = input("How many views would you like to add? : ")
 video_url = input("What is the url for the video that you would like to add the views to?")
 
 # Set the web browser to chrome.
-driver = webdriver.Safari()
+options = webdriver.ChromeOptions()
+options.add_argument("/private/var/folders/mz/5gznz0hn5bn071_d_tktpm5w0000gn/T/.com.google.Chrome.KaYEXP/Default") #Path to chrome profile inside of [chrome://version]
+chrome_path ='/Users/tnyuma/Desktop/chromedriver'
+driver = webdriver.Chrome(executable_path=chrome_path, chrome_options=options)
 
 # Uses Get Method to go to the tool website.
 driver.get("https://mytoolstown.com/tiktok/")
@@ -46,13 +49,8 @@ time.sleep(2)
 deleteCookiesAc()
 time.sleep(2)
 
-
-submit_button = driver.find_element_by_xpath("/html/body/div[3]/center/div/form/button").click()
-submit_button = driver.find_element_by_xpath("/html/body/div[3]/center/div/form/button").click()
-submit_button = driver.find_element_by_xpath("/html/body/div[3]/center/div/form/button").click()
-submit_button = driver.find_element_by_xpath("/html/body/div[3]/center/div/form/button").click()
-submit_button = driver.find_element_by_xpath("/html/body/div[3]/center/div/form/button").click()
-submit_button = driver.find_element_by_xpath("/html/body/div[3]/center/div/form/button").click()
+sendViews = driver.find_element_by_xpath("/html/body/div[3]/center/div/form/button")
+sendViews.send_keys(Keys.ENTER)
 
 time.sleep(2)
 
