@@ -1,7 +1,7 @@
 import  math
 from selenium import webdriver
 import time
-from tiktok_bot import TikTokBot
+from Tiktok_view import TikTokBot
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 import pygame
